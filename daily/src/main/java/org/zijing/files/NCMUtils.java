@@ -45,7 +45,7 @@ public class NCMUtils {
     return false;
   }
 
-  private static boolean containsInSuffixes(File file, String... suffixes) {
+  public static boolean containsInSuffixes(File file, String... suffixes) {
     return arrayContains(Files.getFileExtension(file.getAbsolutePath()), List.of(suffixes));
   }
 
